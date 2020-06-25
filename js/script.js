@@ -1,18 +1,21 @@
 'use strict';
 
-let asd = 10,
-    sd = 10;
-asd++;
-sd--;
-console.log(asd, sd);
+const numbersOfFilms = prompt('How much films you watching?','');
 
-let a = "Hello";
-let b = "World";
+const lastFilmOne = prompt('Останній фільм'),
+    OcinkaFilmOne = prompt('Оцінка'),    
+    lastfilmTwo = prompt('Останній фільм'),
+    OcinkaFilmTwo = prompt('Оцінка');
 
-console.log(a, b);
+const personalMovieDB = {
+    count: numbersOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-let google = "www.google.com";
-let yandex = "www.yandex.com";
+personalMovieDB.movies[lastFilmOne] = OcinkaFilmOne;
+personalMovieDB.movies[lastfilmTwo] = OcinkaFilmTwo;
 
-console.log(google, yandex);
-
+console.log(personalMovieDB);
