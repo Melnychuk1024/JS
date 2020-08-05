@@ -1,35 +1,31 @@
 "use strict";
 
-const obj = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    makeTest: function() {
-        console.log("Test");
-    }
-};
+const arr = [1, 2, 23, 44, 565, 46, 237, 8];
 
-// obj.makeTest();
+console.log(arr.sort(compareNum));
 
-// const {border, bg} = obj.colors;
-// console.log(border, bg);
+function compareNum(a, b) {
+    return a - b;
+}
 
-// delete obj.name;
-// console.log(obj);
+// arr.pop();
+// arr.push(8);
 
-// for (let key in obj) {
-//     if (typeof(obj[key]) === 'object') {
-//         for (let i in obj[key]) {
-//             console.log(`Ключ ${i} має значення ${obj[key][i]}`);        
-//         }
-//     } else {
-//         console.log(`Ключ ${key} має значення ${obj[key]}`);
-//     }
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
 // }
 
-// console.log(Object.keys(obj).length);
+// for (let value of arr) {
+//     console.log(value);
+// }
 
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} всередині масива ${arr}`);
+// });
+
+// const str = prompt("", "");
+// const products = str.split(", ");
+// products.sort();
+// console.log(products.join('; '));
