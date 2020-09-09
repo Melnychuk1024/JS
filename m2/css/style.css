@@ -1,0 +1,15 @@
+.btn-block {
+    background-color: grey;
+}
+button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: yellow;
+}
+.blue-some {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
